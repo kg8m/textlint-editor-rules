@@ -16,7 +16,9 @@ module.exports = {
     // Disable because of false positive: too many proper nouns, e.g., people's names, are treated as error.
     "joyo-kanji": false,
 
-    "no-hoso-kinshi-yogo": true,
+    // Error: 辞書データを取得できませんでした。
+    "no-hoso-kinshi-yogo": false,
+
     "prefer-tari-tari": {
       severity: "warning",
     },
