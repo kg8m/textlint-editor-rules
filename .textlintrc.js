@@ -1,15 +1,14 @@
 module.exports = {
   filters: {
     comments: true,
-    allowlist: {
-      allow: [],
-    },
     "node-types": {
       nodeTypes: ["BlockQuote", "Code", "CodeBlock"],
     },
   },
   rules: {
-    "@textlint-ja/no-synonyms": true,
+    // ReferenceError: window is not defined
+    "@textlint-ja/no-synonyms": false,
+
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
     "date-weekday-mismatch": { lang: "ja-JP" },
     "ja-hiragana-keishikimeishi": true,
@@ -81,8 +80,8 @@ module.exports = {
       "4.2.7.コロン(：)": false,                                // 4.2.7: コロン(：)を使用する場合は「全角」で表記します。 → 半角＋スペースが好み
       "4.3.1.丸かっこ（）": false,                              // 4.3.1: 半角のかっこ()が使用されています。全角のかっこ（）を使用してください。 → 使うことがある
     },
-    "terminology": {
-      defaultTerms: true,
-    },
+
+    // TypeError: Error while loading rule 'terminology': r.readFileSync is not a function
+    "terminology": false,
   },
 };
