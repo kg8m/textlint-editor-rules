@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "@textlint/editor-script-template",
+  "name": "@kg8m/textlint-editor-rules",
   "version": "1.0.0",
-  "description": "@textlint/editor script template",
+  "description": "kg8m's rules for textlint/editor",
   "scripts": {
     "website": "textlint-website-generator --outputDir dist"
   },
