@@ -1,6 +1,10 @@
 module.exports = {
   filters: {
     comments: true,
+    // Build error: Module not found: Error: Can't resolve 'module' in './node_modules/require-from-string'
+    // allowlist: {
+    //   allow: [],
+    // },
     "node-types": {
       nodeTypes: ["BlockQuote", "Code", "CodeBlock"],
     },
